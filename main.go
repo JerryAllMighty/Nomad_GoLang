@@ -63,7 +63,8 @@ import (
 func main() {
 
 	account := accounts.NewAccount("nico")
-	fmt.Println(account)
+	account.Deposit(10)
+	fmt.Println(account.Balance())
 	// favFood := []string{"kimchi", "ramen"}
 	// nico := person{name: "nico", age: 18, favFood: favFood}
 	// fmt.Println(nico)
