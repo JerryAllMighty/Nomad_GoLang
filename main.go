@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/learngo/accounts"
+)
 
 // func multiply(a int, b int) int {
 // 	return a * b
@@ -50,16 +54,19 @@ import "fmt"
 //		return true
 //	}
 
-type person struct {
-	name    string
-	age     int
-	favFood []string
-}
+// type person struct {
+// 	name    string
+// 	age     int
+// 	favFood []string
+// }
 
 func main() {
-	favFood := []string{"kimchi", "ramen"}
-	nico := person{name: "nico", age: 18, favFood: favFood}
-	fmt.Println(nico)
+
+	account := accounts.NewAccount("nico")
+	fmt.Println(account)
+	// favFood := []string{"kimchi", "ramen"}
+	// nico := person{name: "nico", age: 18, favFood: favFood}
+	// fmt.Println(nico)
 	// nico := map[string]string{"name": "kim", "age": "12"}
 
 	// for _, value := range nico {
