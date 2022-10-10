@@ -49,14 +49,30 @@ import "fmt"
 //		}
 //		return true
 //	}
+
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
 func main() {
-	names := []string{"a", "b", "c"}
+	favFood := []string{"kimchi", "ramen"}
+	nico := person{name: "nico", age: 18, favFood: favFood}
+	fmt.Println(nico)
+	// nico := map[string]string{"name": "kim", "age": "12"}
+
+	// for _, value := range nico {
+	// 	fmt.Println(value)
+	// }
+
+	// names := []string{"a", "b", "c"}
 	// names[3] = "d"
 	// names[4] = "e"
 
-	names = append(names, "f")
+	// names = append(names, "f")
 
-	fmt.Println(names)
+	// fmt.Println(names)
 
 	// a := 2
 	// b := a
