@@ -31,17 +31,31 @@ func superAdd(numbers ...int) int {
 	}
 	return total
 }
-func canIDrink(age int) bool {
-	switch koreanAge := age + 2; koreanAge {
-	case 10:
-		return false
-	case 18:
-		return true
-	}
-	return false
-}
+
+//	func canIDrink(age int) bool {
+//		switch koreanAge := age + 2; koreanAge {
+//		case 10:
+//			return false
+//		case 18:
+//			return true
+//		}
+//		return false
+//	}
+//
+//	func canIDrink(age int) bool {
+//		switch koreanAge := age + 2; {
+//		case koreanAge < 18:
+//			return false
+//		}
+//		return true
+//	}
 func main() {
-	fmt.Println(canIDrink(18))
+	a := 2
+	b := a
+	c := &a
+	*c = 90
+	fmt.Println(a, b, *c)
+	//fmt.Println(canIDrink(18))
 	// result := superAdd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 	// print(result)
 	// repeatMe("java", "python", "javascript", "and then there's me")
