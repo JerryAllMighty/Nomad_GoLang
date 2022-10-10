@@ -23,14 +23,14 @@ import "fmt"
 // 	fmt.Println(words)
 // }
 
-func superAdd(numbers ...int) int {
-	total := 0
-	for i := 0; i < len(numbers); i++ {
-		fmt.Println(numbers[i])
-		total += numbers[i]
-	}
-	return total
-}
+// func superAdd(numbers ...int) int {
+// 	total := 0
+// 	for i := 0; i < len(numbers); i++ {
+// 		fmt.Println(numbers[i])
+// 		total += numbers[i]
+// 	}
+// 	return total
+// }
 
 //	func canIDrink(age int) bool {
 //		switch koreanAge := age + 2; koreanAge {
@@ -50,11 +50,19 @@ func superAdd(numbers ...int) int {
 //		return true
 //	}
 func main() {
-	a := 2
-	b := a
-	c := &a
-	*c = 90
-	fmt.Println(a, b, *c)
+	names := []string{"a", "b", "c"}
+	// names[3] = "d"
+	// names[4] = "e"
+
+	names = append(names, "f")
+
+	fmt.Println(names)
+
+	// a := 2
+	// b := a
+	// c := &a
+	// *c = 90
+	// fmt.Println(a, b, *c)
 	//fmt.Println(canIDrink(18))
 	// result := superAdd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 	// print(result)
